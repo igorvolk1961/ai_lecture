@@ -370,6 +370,88 @@
             color: #444;
         }
 
+        .formula-row {
+            flex: 0 0 auto;
+            display: flex;
+            gap: 16px;
+            margin-bottom: 14px;
+        }
+
+        .formula-card {
+            flex: 1;
+            min-width: 0;
+            background: #eef2ff;
+            border-radius: 8px;
+            padding: 14px 18px;
+        }
+
+        .formula-card-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #4c51bf;
+            margin-bottom: 8px;
+        }
+
+        .formula-mono {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.45;
+            color: #333;
+            white-space: pre;
+            overflow-x: auto;
+        }
+
+        .formula-general {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 20px;
+            font-weight: 700;
+            color: #4c51bf;
+            line-height: 1.4;
+        }
+
+        .formula-note {
+            font-size: 14px;
+            color: #555;
+            margin-top: 6px;
+        }
+
+        .charts-row {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: flex;
+            gap: 16px;
+        }
+
+        .chart-box {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .chart-box img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .formula-strip {
+            flex: 0 0 auto;
+            text-align: center;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 24px;
+            font-weight: 700;
+            color: #4c51bf;
+            background: #eef2ff;
+            border-radius: 8px;
+            padding: 12px 18px;
+            margin-bottom: 18px;
+        }
+
         .formula {
             flex: 1 1 auto;
             min-height: 0;
@@ -872,6 +954,38 @@
                 <div class="key-message-label">💡 Вывод:</div>
                 <div class="key-message-text">
                     Слово ≠ токен: длинное слово собирается из нескольких кусочков.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 11 -->
+    <div class="slide">
+        <div class="slide-header">Формула нейросети</div>
+
+        <div class="slide-content">
+            <div class="formula-row">
+                <div class="formula-card">
+                    <div class="formula-card-title">Стоимость покупки</div>
+                    <div class="formula-mono">Стоимость_покупки = количество_картошки * цена_картошки +
+                   количество_капусты * цена_капусты +
+                   количество_морковки * цена_морковки +
+                   количество_мяса * цена_мяса</div>
+                </div>
+
+                <div class="formula-card">
+                    <div class="formula-card-title">Общая формула</div>
+                    <div class="formula-general">S = x₀w₀ + x₁w₁ + … + xₙwₙ</div>
+                    <div class="formula-note">n = 1 000 000 000 · x — количества · w — цены (параметры)</div>
+                </div>
+            </div>
+
+            <div class="charts-row">
+                <div class="chart-box">
+                    <img src="images/chart-linear.png" alt="Линейная зависимость стоимости от количества: картошка 50 ₽/кг, капуста 30 ₽/кг">
+                </div>
+                <div class="chart-box">
+                    <img src="images/chart-plane.png" alt="Плоскость стоимости для картошки и капусты: две переменные">
                 </div>
             </div>
         </div>
