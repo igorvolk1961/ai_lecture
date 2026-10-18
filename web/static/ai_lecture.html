@@ -370,6 +370,404 @@
             color: #444;
         }
 
+        .slide.full-bleed {
+            background: white;
+        }
+
+        .slide.full-bleed img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .feature-layout {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .feature-top {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: flex;
+            gap: 22px;
+        }
+
+        .feature-left {
+            flex: 1.2;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feature-right {
+            flex: 0.8;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .feature-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .feature-table th {
+            background: #667eea;
+            color: white;
+            padding: 5px 8px;
+            text-align: left;
+        }
+
+        .feature-table td {
+            padding: 3px 8px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .feature-table .num {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+
+        .feature-table tr:last-child td {
+            font-weight: 700;
+            color: #4c51bf;
+        }
+
+        .feature-caption {
+            flex: 0 0 auto;
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #555;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 8px 12px;
+        }
+
+        .conclusion-card {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            background: #eef2ff;
+            border-left: 4px solid #667eea;
+            border-radius: 0 8px 8px 0;
+            padding: 8px 12px;
+            font-size: 14px;
+            line-height: 1.35;
+            color: #333;
+        }
+
+        .conclusion-num {
+            flex: 0 0 auto;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #667eea;
+            color: white;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .feature-note {
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .feature-intro {
+            flex: 0 0 auto;
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .feature-bottom {
+            flex: 0 0 auto;
+            display: flex;
+            gap: 18px;
+            align-items: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px 16px;
+        }
+
+        .kuzdra-text {
+            flex: 1;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        .kuzdra-text em {
+            color: #4c51bf;
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        .kuzdra-image {
+            flex: 0 0 auto;
+        }
+
+        .kuzdra-image img {
+            max-height: 150px;
+            width: auto;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .history-layout {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: flex;
+            gap: 24px;
+        }
+
+        .history-story {
+            flex: 1.1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 18px;
+        }
+
+        .history-story p {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .history-images {
+            flex: 0.9;
+            min-width: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .history-img {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .history-img img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .history-table-wrap {
+            flex: 1.1;
+            min-width: 0;
+            overflow: auto;
+        }
+
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+
+        .history-table th {
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            text-align: left;
+        }
+
+        .history-table td {
+            padding: 2px 8px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .history-table .num {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+
+        .history-side {
+            flex: 0.9;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 18px;
+        }
+
+        .history-vector {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #333;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 14px 16px;
+        }
+
+        .riddle-layout {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: flex;
+            gap: 24px;
+        }
+
+        .riddle-images {
+            flex: 1.1;
+            min-width: 0;
+            display: flex;
+            gap: 12px;
+        }
+
+        .riddle-main {
+            flex: 0.8;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 6px;
+            overflow: hidden;
+        }
+
+        .riddle-side {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .riddle-side-item {
+            flex: 1;
+            min-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 6px;
+            overflow: hidden;
+        }
+
+        .riddle-images img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .riddle-right {
+            flex: 0.9;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .riddle-text {
+            flex: 0 0 auto;
+            font-size: 18px;
+            line-height: 1.4;
+            color: #333;
+            background: #eef2ff;
+            border-left: 5px solid #667eea;
+            border-radius: 0 8px 8px 0;
+            padding: 10px 14px;
+        }
+
+        .riddle-question {
+            font-size: 22px;
+            font-weight: 700;
+            color: #4c51bf;
+            text-align: center;
+        }
+
+        .answer-layout {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: flex;
+            gap: 24px;
+        }
+
+        .answer-left {
+            flex: 1.1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .answer-left p {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .answer-image {
+            flex: 0.9;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 8px;
+            overflow: hidden;
+        }
+
+        .answer-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .big-number {
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 72px;
+            font-weight: 800;
+            color: #4c51bf;
+            letter-spacing: 1px;
+        }
+
+        .big-number sup {
+            font-size: 0.5em;
+        }
+
+        .big-number-note {
+            flex: 0 0 auto;
+            text-align: center;
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 24px;
+        }
+
         .formula-row {
             flex: 0 0 auto;
             display: flex;
@@ -986,6 +1384,189 @@
                 </div>
                 <div class="chart-box">
                     <img src="images/chart-plane.png" alt="Плоскость стоимости для картошки и капусты: две переменные">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 12 -->
+    <div class="slide full-bleed">
+        <img src="images/pptx-slide-7.png" alt="Слайд 7 из презентации «Все про ИИ для СА»">
+    </div>
+
+    <!-- СЛАЙД 13 -->
+    <div class="slide full-bleed">
+        <img src="images/pptx-slide-8.png" alt="Пуговица">
+    </div>
+
+    <!-- СЛАЙД 14 -->
+    <div class="slide full-bleed">
+        <img src="images/pptx-slide-9.png" alt="Это живое? Это сделал человек?">
+    </div>
+
+    <!-- СЛАЙД 15 -->
+    <div class="slide">
+        <div class="slide-header">Смысловые признаки</div>
+
+        <div class="slide-content">
+            <div class="feature-layout">
+                <div class="feature-top">
+                <div class="feature-left">
+                    <div class="feature-intro">Опишем пуговицу ответами на вопросы.</div>
+            <table class="feature-table">
+                <thead>
+                    <tr><th>Признак</th><th class="num">Значение</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Это живое?</td><td class="num">0%</td></tr>
+                    <tr><td>Это сделал человек?</td><td class="num">100%</td></tr>
+                    <tr><td>Это состоит из металла?</td><td class="num">25%</td></tr>
+                    <tr><td>Это инструмент?</td><td class="num">1%</td></tr>
+                    <tr><td>Это прибор?</td><td class="num">0%</td></tr>
+                    <tr><td>Это приспособление?</td><td class="num">60%</td></tr>
+                    <tr><td>Это нужно, чтобы перемещать что-то?</td><td class="num">0%</td></tr>
+                    <tr><td>Это нужно, чтобы зафиксировать что-то?</td><td class="num">90%</td></tr>
+                    <tr><td>Это нужно, чтобы зафиксировать что-то на человеке?</td><td class="num">100%</td></tr>
+                    <tr><td>Это одежда?</td><td class="num">10%</td></tr>
+                    <tr><td>Это часть одежды?</td><td class="num">100%</td></tr>
+                    <tr><td>Это пуговица?</td><td class="num">Вы угадали!!!</td></tr>
+                </tbody>
+            </table>
+
+                    <div class="feature-caption">
+                        Пуговица = (0, 1, 0.25, 0.01, 0, 0.6, 0, 0.9, 1, 0.1, 1) — список чисел.
+                    </div>
+                </div>
+
+                <div class="feature-right">
+                    <div class="conclusion-card">
+                        <div class="conclusion-num">1</div>
+                        <div>Любое слово можно закодировать списком числовых значений смысловых признаков.</div>
+                    </div>
+                    <div class="conclusion-card">
+                        <div class="conclusion-num">2</div>
+                        <div>Части слов также могут иметь смысловые признаки.</div>
+                    </div>
+                    <div class="conclusion-card">
+                        <div class="conclusion-num">3</div>
+                        <div>В языковых нейросетях списком чисел кодируются не слова, а токены.</div>
+                    </div>
+                    <div class="conclusion-card">
+                        <div class="conclusion-num">4</div>
+                        <div>Эти числа формируются автоматически при обучении и могут не совпадать с человеческим представлением о «смысле», но косвенно с ним связаны.</div>
+                    </div>
+                    <div class="conclusion-card">
+                        <div class="conclusion-num">5</div>
+                        <div>Списки чисел, кодирующих токены, называются эмбеддингами.</div>
+                    </div>
+                    <div class="feature-note">У модели GigaChat3-10B-A1.8B длина эмбеддинга — 1536.</div>
+                    <div class="feature-note">У модели GigaChat3.5-432B-A28B длина эмбеддинга — 7168.</div>
+                </div>
+                </div>
+
+                <div class="feature-bottom">
+                    <div class="kuzdra-text">
+                        Вы можете удивиться, как смысловые признаки могут характеризовать не целое слово, а только его часть? Вспомните <em>Глокую Куздру</em>, которая штеко будланула бокра и кудрячит бокрёнка. В книге Успенского «Слово о словах» эта история приведена как пример того, что суффиксы и окончания могут иметь важное смысловое содержание.
+                    </div>
+                    <div class="kuzdra-image">
+                        <img src="images/kuzdra.png" alt="Глокая Куздра">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 16 -->
+    <div class="slide">
+        <div class="slide-header">Загадка</div>
+
+        <div class="slide-content">
+            <div class="riddle-layout">
+                <div class="riddle-images">
+                    <div class="riddle-main"><img src="images/history-1.png" alt="Загадка: иллюстрация 1"></div>
+                    <div class="riddle-side">
+                        <div class="riddle-side-item"><img src="images/history-2.png" alt="Загадка: иллюстрация 2"></div>
+                        <div class="riddle-side-item"><img src="images/history-3.png" alt="Загадка: иллюстрация 3"></div>
+                    </div>
+                </div>
+
+                <div class="riddle-right">
+                    <div class="riddle-text">«Он спросил: „Ты меня любишь?“ Она ответила: „Да“ — и умерла».</div>
+                    <div class="riddle-question">Что произошло?</div>
+                    <div class="history-table-wrap">
+                        <table class="history-table">
+                            <thead>
+                                <tr><th>Вопрос</th><th class="num">Ответ</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Он её убил?</td><td class="num">0.1</td></tr>
+                                <tr><td>Она умерла от старости?</td><td class="num">0</td></tr>
+                                <tr><td>Она умерла от болезни?</td><td class="num">0.05</td></tr>
+                                <tr><td>Это несчастный случай?</td><td class="num">0.9</td></tr>
+                                <tr><td>Она умерла от травм?</td><td class="num">0.99</td></tr>
+                                <tr><td>Он нанёс ей травмы?</td><td class="num">0.01</td></tr>
+                                <tr><td>Кто-то другой нанёс ей травмы?</td><td class="num">0</td></tr>
+                                <tr><td>Что-то нанесло ей травмы?</td><td class="num">0.9</td></tr>
+                                <tr><td>Транспортное средство?</td><td class="num">0</td></tr>
+                                <tr><td>Это оружие?</td><td class="num">0</td></tr>
+                                <tr><td>Это предмет?</td><td class="num">0.001</td></tr>
+                                <tr><td>Это явление природы?</td><td class="num">0.95</td></tr>
+                                <tr><td>Это молния?</td><td class="num">0</td></tr>
+                                <tr><td>Это твёрдый предмет?</td><td class="num">0.99</td></tr>
+                                <tr><td>Это земля?</td><td class="num">1</td></tr>
+                                <tr><td>Она разбилась?</td><td class="num">1</td></tr>
+                                <tr><td>Она упала с высоты?</td><td class="num">1</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 17 -->
+    <div class="slide">
+        <div class="slide-header">Отгадка</div>
+
+        <div class="slide-content">
+            <div class="answer-layout">
+                <div class="answer-left">
+                    <p>«Гимнасты выступали под куполом цирка. Она держалась зубами за зажим, который держал Он. Когда она ответила ему, её зубы разжались, она упала и разбилась».</p>
+
+                    <div class="history-vector">
+                        История = (0.1, 0, 0.05, 0.9, 0.99, 0.01, 0, 0.9, 0, 0, 0.001, 0.95, 0, 0.99, 1, …)
+                    </div>
+
+                    <div class="key-message">
+                        <div class="key-message-label">💡 Вывод:</div>
+                        <div class="key-message-text">
+                            Вектором смысловых признаков можно закодировать всё.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="answer-image">
+                    <img src="images/history-4.png" alt="Иллюстрация циркового номера">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- СЛАЙД 18 -->
+    <div class="slide">
+        <div class="slide-header">Сколько это — 1536 чисел?</div>
+
+        <div class="slide-content">
+            <div class="big-number">2<sup>1536</sup> ≈ 10<sup>462</sup></div>
+            <div class="big-number-note">
+                463 цифры — это примерно страница мелкого текста.<br>
+                Чтобы представить это число, используем матрёшку вселенных: пять уровней дают 10<sup>400</sup> атомов, шесть — 10<sup>480</sup>.
+            </div>
+
+            <div class="key-message">
+                <div class="key-message-label">💡 Вывод:</div>
+                <div class="key-message-text">
+                    Эмбеддингом такой длины можно закодировать смысл всех когда-либо написанных текстов и всех мыслей, когда-либо «подуманных» или которые будут подуманы до того, как погаснет Солнце.
                 </div>
             </div>
         </div>
